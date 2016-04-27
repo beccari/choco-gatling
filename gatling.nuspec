@@ -2,44 +2,32 @@
 <!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
-    <!-- Read this before publishing packages to chocolatey.org: https://github.com/chocolatey/chocolatey/wiki/CreatePackages -->
     <id>gatling</id>
     <title>gatling (Portable)</title>
     <version>2.2.0</version>
-    <authors>Gatling Team (http://gatling.io/#/team)</authors>
+    <authors>Gatling Team</authors>
     <owners>Marcelo Beccari</owners>
     <summary>The Gatling load testing framework</summary>
     <description>
-      From http://gatling.io page:
+Gatling is an open-source load testing framework based on Scala, Akka Netty
 
-       Gatling is an open-source load testing framework based on Scala, Akka Netty
+This package is likely a meta/virtual application package:
 
+ - Download the Gatling Bundle
+ - Add the gatling command to the PATH
+ - Set the environment variable GATLING_HOME
 
-       This package is likely a meta/virtual application package that does the following:
-       - Download the Gatling Bundle
-       - Add the gatling command to the PATH
-       - Set the environment variable GATLING_HOME
+The JDK 1.7.52+ is required in order to execute gatling
 
-
-       The JDK 1.7.52+ is required in order to execute gatling
+More details at [gatling.io](http://gatling.io) project page
     </description>
     <projectUrl>http://gatling.io/</projectUrl>
-    <!-- <packageSourceUrl></packageSourceUrl> -->
-    <!--<projectSourceUrl></projectSourceUrl>
-    <docsUrl></docsUrl>
-    <mailingListUrl></mailingListUrl>
-    <bugTrackerUrl></bugTrackerUrl>-->
+    <docsUrl>http://gatling.io/docs/2.0.0-RC2/</docsUrl>
     <tags>gatling stress-testing developer programming</tags>
     <copyright>Apache License v2.0</copyright>
     <licenseUrl>http://gatling.io/docs/2.0.1/project/licenses.html</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <!--<iconUrl>http://cdn.rawgit.com/__REPLACE_YOUR_REPO__/master/icons/gatling.png</iconUrl>-->
-    <!--<dependencies>
-      <dependency id="" version="__VERSION__" />
-      <dependency id="" />
-    </dependencies>-->
-    <!-- <releaseNotes></releaseNotes> -->
-    <!--<provides></provides>-->
+    <iconUrl>http://gatling.io/images/gatling-logo.png</iconUrl>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
