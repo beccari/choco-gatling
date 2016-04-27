@@ -6,7 +6,7 @@
     <id>gatling</id>
     <title>gatling (Portable)</title>
     <version>2.2.0</version>
-    <authors>Marcelo Beccari</authors>
+    <authors>Gatling Team (http://gatling.io/#/team)</authors>
     <owners>Marcelo Beccari</owners>
     <summary>The Gatling load testing framework</summary>
     <description>

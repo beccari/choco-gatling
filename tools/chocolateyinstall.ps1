@@ -11,7 +11,6 @@ $packageArgs = @{
   unzipLocation = $toolsDir
   url           = $url
 
-  # optional, highly recommended
   softwareName  = 'gatling*' #part or all of the Display Name as you see it in Programs and Features. It should be enough to be unique
   checksum      = ''
   checksumType  = 'md5' #default is md5, can also be sha1
@@ -21,7 +20,7 @@ Install-ChocolateyZipPackage @packageArgs
 
 $unziped = Join-Path $toolsDir $folderName
 Write-Warning "Moving all files from $unziped to $toolsDir"
-# Moving all unpacked folder content to toolsDir
+
 mv "$unziped\*" $toolsDir
 
 rm $unziped
